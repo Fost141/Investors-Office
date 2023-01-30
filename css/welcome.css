@@ -1,0 +1,62 @@
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.page_welcome {
+    width: 1440px;
+    height: 100vh;
+    background-color: #eef1f7;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.background_vector_welcome {
+    position: absolute;
+    top: 0%;
+    opacity: 0.25;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.block_content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 171px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 36px 24px 0 0;
+    z-index: 1;
+}
+
+.block_content p {
+    margin-top: 34px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3248;
+}
+
+.block_content:hover {
+    background: rgba(186, 205, 234, 0.5);
+    transition: all 0.5s ease;
+}
