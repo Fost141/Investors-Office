@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../font/Gilroy-Regular.eot');
+    src: url('../Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Gilroy-Regular.woff') format('woff'),
+    url('../font/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 * {
     margin: 0;
     padding: 0;
