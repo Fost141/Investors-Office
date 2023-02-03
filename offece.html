@@ -38,7 +38,61 @@
             </div>
             <div class="trading">               
                 <div class="trading_form">
-
+                    <div class="trading_form_content">
+                        <div class="name_balance">
+                            <p>Form</p>
+                            <p class="balance_redact">Balance: 0.0000</p>
+                        </div>
+                        <div class="trading_form_input_button">
+                            <input class="input_trading" type="text" placeholder="0.0000">
+                            <div class="trading_form_button">
+                                <a class="button_max" href="#">MAX</a>
+                                <!-- Выпадающее меню валют -->
+                                <ul class="main_menu">
+                                    <li class="main_currency_menu">
+                                        <a class="value_menu" href="#"><img class="img_usdt" src="img/usdt.png" alt="">USDT<img class="polygon" src="img/polygon.png" alt=""></a>
+                                        <ul class="currency_menu">
+                                            <li><a class="currency" href="#"><img class="img_currency" src="img/usdt.png" alt="">USDT</a></li>
+                                            <li><a class="currency" href="#"><img class="img_currency" src="img/bitcoin.png" alt="">Bitcoin</a></li>
+                                            <li><a class="currency" href="#"><img class="img_currency" src="img/ethereum.png" alt="">Ethereum</a></li>
+                                            <li><a class="currency" href="#"><img class="img_currency" src="img/tron.png" alt="">Tron</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trading_form_content  non_active_input">
+                        <div class="name_balance">
+                            <p>Form</p>
+                            <p class="balance_redact">Balance: 0.0000</p>
+                        </div>
+                        <div class="trading_form_input_button">
+                            <input class="input_trading" type="text" placeholder="0.0000" disabled="disabled">
+                            <a class="hwx_token" href="#"><img src="img/hwx_token.png" alt="hwxtoken">HWX Token</a>
+                        </div>
+                    </div>
+                    <div class="trading_form_text">
+                        <div class="form_text_content">
+                            <p class="form_text_bold">0.7 USDT</p>
+                            <p class="form_text_lite">Private sale price</p>
+                        </div>
+                        <div class="form_text_content">
+                            <p class="form_text_bold">10.0 USDT</p>
+                            <p class="form_text_lite">Minimum amount</p>
+                        </div>
+                        <div class="form_text_content">
+                            <p class="form_text_bold">0 HWX Token</p>
+                            <p class="form_text_lite">Available coins</p>
+                        </div>
+                    </div>
+                    <div class="action_form">
+                        <a class="action_button" href="#">Action</a>
+                        <div class="agree">
+                            <input type="checkbox">
+                            <p>I agree with the <span class="agree_text">Terms of purchase of the Hawex DAO</span></p>
+                        </div>
+                    </div>
                 </div>
                 <div class="trading_round">
                     <div class="round_content">
@@ -71,6 +125,9 @@
                         </div>
                         <div class="total_balance_input">
                             <input class="total_balance_input_redact" type="text" placeholder="0.0000">
+                            <div class="adress_button button_claim">
+                                <a href="#">CLAIM</a>
+                            </div>
                         </div>
                         <div class="round_name">
                             <p class="round_lite_text">Contract address</p>
