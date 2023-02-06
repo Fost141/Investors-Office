@@ -18,40 +18,40 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding-right: 20px;
+}
+
 .page {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #eef1f7;
 }
 
 .first {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 737px;
+    background-image: url('/img/intro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.background_vector {
-    position: absolute;
-    top: 0;
-    margin-left: 198px;
-    opacity: 0.25;
-    overflow: hidden;
-}
-
-.background__landing_back {
-    position: absolute;
-    margin-top: 90px;
+.background_intro {
+    display: none;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1266px;
+    width: 90%;
     height: 48px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-top: 57px;
+    z-index: 1000;
 }
 
 .buttons {
@@ -117,7 +117,7 @@ a {
 
 .name {
     position: relative;
-    margin: 93px 0 0 0;
+    margin: 140px 0 0 0;
     text-align: center;
     font-family: 'Gilroy';
     color: #8E96BE;
@@ -134,7 +134,8 @@ a {
 }
 
 .description {
-    width: 723px;
+    max-width: 723px;
+    width: 100%;
     height: 144px;
     margin-left: auto;
     margin-right: auto;
@@ -151,7 +152,7 @@ a {
 }
 
 .slogan {
-    width: 333px;
+    max-width: 333px;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -206,7 +207,8 @@ a {
 }
 
 .section_description {
-    width: 559px;
+    max-width: 559px;
+    width: 100%;
     margin-top: 12px;
     font-family: 'Gilroy';
     font-weight: 600;
@@ -216,8 +218,8 @@ a {
 }
 
 .section_slogan {
-    width: 582px;
-    height: 90px;
+    max-width: 582px;
+    width: 100%;
     margin-top: 24px;
     font-family: 'Gilroy';
     font-weight: 500;
@@ -228,11 +230,11 @@ a {
 .section_box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
     width: 381px;
-    height: 385px;
     background-color: #FFFFFF;
     box-shadow: 0px 20px 50px rgba(54, 56, 83, 0.09);
     border-radius: 20px;
@@ -253,9 +255,8 @@ a {
 }
 
 .box_description {
-    width: 320px;
-    padding: 14px 0 0 25px;
-    
+    max-width: 320px;
+    padding: 14px 10px 10px 25px;
     font-family: 'Gilroy';
     font-weight: 500;
     font-size: 16px;
@@ -264,7 +265,10 @@ a {
 }
 
 .line {
-    width: 1260px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 90%;
     margin-top: 120px;
     border: 1px solid #CCDDF7;
 }
@@ -286,8 +290,9 @@ a {
 }
 
 .container {
-    width: 598px;
-    height: 361px;
+    max-width: 598px;
+    width: 100%;
+    height: auto;
     margin: 50px 40px 0 0;
     background: linear-gradient(180deg, rgba(88, 166, 255, 0.15) 0%, rgba(162, 205, 255, 0.15) 109.05%);
     border-top: 2px solid #107FFF;
@@ -297,7 +302,7 @@ a {
 }
 
 .box_container {
-    width: 518px;
+    max-width: 518px;
     height: 174px;
     margin: 40px;
     background: #ADD2F3;
@@ -305,13 +310,14 @@ a {
 }
 
 .container p {
-    width: 492px;
+    max-width: 492px;
     margin: 30px 0 0 40px;
     font-family: 'Gilroy';
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
     color: #353535;
+    padding-bottom: 20px;
 }
 
 .section_for_img {
@@ -321,6 +327,8 @@ a {
 .stat {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .line_left {
@@ -336,10 +344,12 @@ a {
 
 .section_five_container {
     display: flex;
+    justify-content: space-between;
 }
 
 .section_five_slogan {
-    width: 507px;
+    max-width: 507px;
+    width: 100%;
     height: 90px;
     margin-top: 24px;
     font-family: 'Gilroy';
@@ -395,7 +405,8 @@ a {
 }
 
 .section_five_img {
-    margin-left: 137px;
+    max-width: 450px;
+    object-fit: cover;
 }
 
 .six {
@@ -404,6 +415,7 @@ a {
 
 .section_six_container {
     display: flex;
+    justify-content: space-between;
 }
 
 .six_text {
@@ -415,7 +427,7 @@ a {
 }
 
 .section_six_img {
-    margin-left: 65px;
+    object-fit: cover;
 }
 
 .seven {
@@ -424,10 +436,12 @@ a {
 
 .block_up {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .seven_container {
-    width: 599px;
+    max-width: 599px;
+    width: 100%;
     margin-top: 24px;
     margin-right: 40px;
     background: linear-gradient(180deg, rgba(35, 138, 255, 0.15) 0%, rgba(210, 231, 255, 0.0255) 109.05%);
@@ -463,10 +477,18 @@ a {
 }
 
 .progress {
-    width: 519px;
+    max-width: 519px;
     height: 7px;
     margin: 36px 0 0 40px;
     background: #509AF4;
+    border-radius: 7px;
+}
+
+.progress_live {
+    max-width: 519px;
+    height: 7px;
+    margin: 36px 0 0 40px;
+    border: solid 1px #509AF4;
     border-radius: 7px;
 }
 
@@ -503,6 +525,7 @@ a {
 
 .block_down {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -568,13 +591,21 @@ a {
 }
 
 .roadmap_img {
+    width: 100%;
+    object-fit: cover;
     margin-top: 67px;
+    padding-right: 20px;
 }
 
 .roadmap_txt {
     display: flex;
     justify-content: space-around;
-    margin-right: 80px;
+    margin-top: 24px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #0D1526;
 }
 
 .q1, .q2, .q3 p {
@@ -591,15 +622,6 @@ a {
     font-size: 24px;
     line-height: 29px;
     color: #7D8391;
-}
-
-.roadmap_text {
-    margin-top: 24px;
-    font-family: 'Gilroy';
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-    color: #0D1526;
 }
 
 .roadmap_text_ul {
@@ -635,7 +657,7 @@ a {
 }
 
 .foto_content {
-    margin-right: 16px;
+    margin: 20px 20px 0 0;
 }
 
 .foto_name {
@@ -755,12 +777,14 @@ a {
 }
 
 footer {
+    display: block;
     margin: 250px 0 0 101px;
 }
 
 .footer_up {
     display: flex;
     justify-content: space-between;
+    padding-right: 20px;
 }
 
 .logo_button {
@@ -826,7 +850,6 @@ footer {
 
 .footer_social {
     display: flex;
-    margin-right: 40px;
 }
 
 .social_content {
@@ -845,7 +868,7 @@ footer {
 }
 
 .footer_line {
-    width: 1270px;
+    width: 98%;
     margin-top: 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -867,7 +890,6 @@ footer {
 
 .footer_info {
     display: flex;
-    margin-right: 40px;
 }
 
 .footer_info p {
